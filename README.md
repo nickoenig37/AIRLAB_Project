@@ -30,9 +30,33 @@ sudo apt install ros-humble-tf-transformations
 
 - Then install the dependencies and build
 ```bash
-cd ~/ros2_ws
+cd ../.. # Or cd ~./ros2_ws
 rosdep install --from-paths src --ignore-src -r -y
 ```
+```bash
+colcon build --symlink-install
+```
+```bash
+source install/setup.bash
+```
+
+- Now you are ready to run the project!
+## Using the Programs (Launch/Run each in a new terminal)
+- First and foremost, make sure the camera is connected to the computer and powered on.
+
+- This command launches the bringup launch file for Realsense and MediaPipe Packages
+```bash
+ros2 launch pkg_bringup bringup.launch.py
+```
+- To Visualize the camera data in RVIZ2, run the following command
+```bash
+rviz2
+```
+- This command launches the Aruco Marker Detection
+```bash
+ros2 launch ros2_aruco aruco_recognition.launch.py 
+```
+
 
 
 
