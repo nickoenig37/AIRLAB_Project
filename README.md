@@ -20,7 +20,7 @@ cd AIRLAB_Project
 ```
 - Clone the repository for the Aruco Marker Detection
 ```bash
-git clone https://github.com/nickoenig37/ROS2_MediaPipe_D435.git
+git clone https://github.com/nickoenig37/ros2_aruco.git
 ```
 - Install Needed Dependencies for Aruco Marker Detection
 ```bash
