@@ -65,4 +65,13 @@ def generate_launch_description():
             output='screen',
             emulate_tty=True,
         ),
+
+        # --- 6. Launch face_mesh_publisher node ---
+        Node(
+            package='face_mesh',
+            executable='face_mesh',
+            name='face_mesh_node',
+            output='screen',
+            emulate_tty=True,
+        ),
     ])
